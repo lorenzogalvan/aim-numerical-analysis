@@ -1,0 +1,36 @@
+Input file parameters:  [{'n_layers': 3, 'n_neurons': 2, 'dim': 2, 'learning_rate': 0.001}, {'num_train_points': 200, 'num_pde_points': 600, 'num_test_points': 15000, 'seed': 1, 'num_epochs': 650}] 
+
+
+Model
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                     NN PROPERTIES                                 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Number of layers : 3
+Number of neurons in each layer :  2
+Activation function :  <function tanh at 0x000001F97C07DB80>
+Optimizer :  <keras.optimizer_v2.adam.Adam object at 0x000001F903D97BE0>
+Learning rate: 0.001 
+
+
+NN loss:  0.5673897 
+
+NN time:  6.324538230895996 
+
+PINN:  
+
+Elapsed time:  14.67332124710083 
+
+NN loss:  0.61634225 
+
+PDE loss:  0.06406068 
+
+PINN:  
+
+Elapsed time:  16.318544387817383 
+
+NN loss:  0.6198957 
+
+PDE loss:  0.06818061 
+
+estimated mu:   1.380994
+relative error: 3.81e-01
