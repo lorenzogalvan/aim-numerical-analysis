@@ -48,8 +48,9 @@ class NN:
         self.input_dim = dim            # input dimension
 
         self.layers = [tf.keras.Input(shape = (self.input_dim,))] # First we create the input layer
-        self.hidden_layers = [tf.keras.layers.Dense(n_neurons, activation = activation) for i in range(n_layers - 1)]
+        self.hidden_layers = [tf.keras.layers.Dense(n_neurons, activation = activation) for i in range(n_layers)]
         # Then we create all the other layers of our NN
+        # We use n_layers (do not count input and output layer as hidden_layers)
 
         self.layers.extend(self.hidden_layers)  # We add all the layers to the input one
         self.layers.append(tf.keras.layers.Dense(self.output_dim, activation = activation)) # And we can finally append the output layer
